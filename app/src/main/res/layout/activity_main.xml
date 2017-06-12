@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.exemple.converter.MainActivity"
+    android:background="@drawable/bg">
+
+    <Button
+        android:textAllCaps="false"
+        android:text="location based"
+        android:id="@+id/toLocationConverter"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/map"
+        android:background="@drawable/main_button_shape"
+        android:layout_height="60dp"
+        android:layout_above="@+id/toClassicConverter"
+        android:layout_alignLeft="@+id/toPhotoConverter"
+        android:layout_alignStart="@+id/toPhotoConverter"
+        android:layout_marginBottom="15dp"
+        android:layout_width="220dp"
+        android:fontFamily="monospace" />
+
+    <Button
+        android:textAllCaps="false"
+        android:text="photo"
+        android:id="@+id/toPhotoConverter"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/camera"
+        android:layout_height="60dp"
+        android:background="@drawable/main_button_shape"
+        android:layout_above="@+id/toLocationConverter"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="220dp"
+        android:fontFamily="monospace" />
+
+    <Button
+        android:text="classic"
+        android:textAllCaps="false"
+        android:id="@+id/toClassicConverter"
+        android:layout_marginBottom="17dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/classic"
+        android:layout_height="60dp"
+        android:background="@drawable/main_button_shape"
+        android:layout_width="220dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/toLocationConverter"
+        android:layout_alignStart="@+id/toLocationConverter"
+        android:fontFamily="monospace"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        />
+
+
+
+
+</RelativeLayout>
